@@ -5,9 +5,9 @@ import './MealList.css';
 function MealList({ meals }) {
     return (
         <div className='list'>
-            {
-                meal => (<Meal key={meal.idMeal} {...meal} />
-            }
+            {meals.map(meal => (
+                <Meal key={meal.idMeal} {...meal} />
+            ))}
         </div>
     )
 }

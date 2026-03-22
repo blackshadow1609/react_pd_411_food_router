@@ -9,8 +9,13 @@ function Category() {
     const [meals, setMeals] = useState([]);
     const navigate = useNavigate();
     let goBack = () => navigate(-1);
-    useEffect(() => { getFilteredCategory(name).then(data => setMeals(data.setMeals)); }, [name]);
+    useEffect
+        (
+            () => {
+                getFilteredCategory(name).then(data => setMeals(data.meals));
 
+            }, [name]
+        );
 
     return (
         <div className='wrap'>
