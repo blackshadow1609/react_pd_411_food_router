@@ -9,6 +9,7 @@ import Recipe from './components/Recipe';
 import NotFound from './pages/main/NotFound';
 
 
+
 function App() {
   const text = {
     title: "Welcome to The MealDB",

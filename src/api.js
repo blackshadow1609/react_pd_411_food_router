@@ -9,7 +9,7 @@ const getMealById = async (idMeal) => {
     return await response.json();
 }
 const getFilteredCategory = async (catName) => {
-    const response = await fetch (API_URL + '/FileSystemEntry.php?c=' + catName);
+    const response = await fetch (API_URL + '/filter.php?c=' + catName);
     return await response.json();
 }
 export {getMealById, getAllCategories, getFilteredCategory}
