@@ -11,7 +11,6 @@ function Home() {
 
     return (
         <div className='wrap'>
-            {/* <CategoryList categories={catalog} /> */}
             <CategoryList catalog={catalog} />
         </div>
     )
