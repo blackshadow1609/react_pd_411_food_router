@@ -1,21 +1,3 @@
-// import './Home.css';
-// import { useState, useEffect } from 'react';
-// import { getAllCategories } from '../../api';
-// import CategoryList from '../../components/categoryList/CategoryList';
-// import Preloader from '../../components/Preloader';
-
-// function Home() {
-//     const [catalog, setCatalog] = useState([]);
-//     useEffect(
-//         () => { getAllCategories().then((data) => { setCatalog(data.categories); }); }, []);
-
-//     return (
-//         <div className='wrap'>
-//             <CategoryList catalog={catalog} />
-//         </div>
-//     )
-// }
-// export default Home;
 import './Home.css';
 import { useState, useEffect } from 'react';
 import { getAllCategories } from '../../api';
@@ -24,22 +6,21 @@ import Preloader from '../../components/Preloader';
 
 function Home() {
     const [catalog, setCatalog] = useState([]);
-    const [loading, setLoading] = useState(true); // Добавляем состояние загрузки
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setLoading(true); // Начинаем загрузку
+        setLoading(true);
         getAllCategories()
             .then((data) => {
                 setCatalog(data.categories);
-                setLoading(false); // Загрузка завершена успешно
+                setLoading(false);
             })
             .catch((error) => {
                 console.error('Ошибка загрузки категорий:', error);
-                setLoading(false); // В случае ошибки тоже завершаем загрузку
+                setLoading(false);
             });
     }, []);
 
-    // Показываем Preloader во время загрузки
     if (loading) {
         return <Preloader />;
     }
