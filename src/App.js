@@ -7,8 +7,7 @@ import Contacts from './pages/main/Contacts';
 import Category from './components/Category';
 import Recipe from './components/Recipe';
 import NotFound from './pages/main/NotFound';
-
-
+import Pattern from './components/Pattern'; 
 
 function App() {
   const text = {
@@ -18,9 +17,9 @@ function App() {
 
   return (
     <div className="App">
+      <Pattern /> 
       <Routes>
         <Route path="/" element={<Layout />}>
-
           <Route index element={<Home />} />
           <Route path="about" element={<About text={text} />} />
           <Route path="contacts" element={<Contacts />} />

@@ -44,6 +44,7 @@ function Recipe() {
                                                 </tr>
                                             )
                                         }
+                                        return null;
                                     }
                                 )
                         }

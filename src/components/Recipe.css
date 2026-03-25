@@ -20,7 +20,7 @@
 
 .recipe table>thead {
     height: 50px;
-    background-color: #7edd35;
+    background-color: #ff6f61;
     color: aliceblue;
     text-transform: uppercase;
 }
@@ -33,9 +33,9 @@
 }
 
 .recipe tbody tr:nth-child(odd) {
-    background-color: #d5f1c0;
+    background-color: #f7e18b;
 }
 
 .recipe tbody tr:nth-child(even) {
-    background-color: #c5eca7;
+    background-color: #ffcc00;
 }
