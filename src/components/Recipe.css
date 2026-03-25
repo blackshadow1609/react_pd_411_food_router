@@ -1,0 +1,41 @@
+.recipe img {
+    max-width: 25%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 8px silver;
+}
+
+.recipe p {
+    margin: 0 70px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.recipe table {
+    width: 50%;
+    margin: 32px auto;
+    border-collapse: collapse;
+}
+
+.recipe table>thead {
+    height: 50px;
+    background-color: #7edd35;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.recipe table th,
+.recipe table td {
+    border: solid 3px;
+    border-radius: 7px;
+    border-color: aliceblue;
+}
+
+.recipe tbody tr:nth-child(odd) {
+    background-color: #d5f1c0;
+}
+
+.recipe tbody tr:nth-child(even) {
+    background-color: #c5eca7;
+}
