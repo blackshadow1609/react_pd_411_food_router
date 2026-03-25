@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&display=swap');
+
+.footer {
+    text-align: center;
+    background-color: #ff6f61;
+    color: aliceblue;
+    padding: 10px 0px;
+    height: 25px;
+    font-size: 20px;
+    font-family: fantasy;
+    font-family: "Fruktur", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
